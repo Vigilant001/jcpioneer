@@ -6,10 +6,10 @@ import { Document } from 'react-pdf'
 import {Res} from 'img';
 import {image1, image2, image3, image4, image5, image6} from 'img';
 
-const Modals1 = (props) => {
-    return <Modal width="560" height="315" src={image1}></Modal>
-}
 
+const YouTube1 = (props) => {
+  return <div width="560" height="315" src="https://www.youtube.com/embed/_aXmF2CdVnc"></div>
+}
 /*
 const YouTube1 = (props) => {
   return <iframe {...props} width="560" height="315" src="https://www.youtube.com/embed/_aXmF2CdVnc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -40,7 +40,7 @@ BigPicture({
   ytSrc: '_aXmF2CdVnc'
 })
 
-
+/*
 <img src='/jdc_resume_2018_film_1.png'/>
 
 Illuminate: src="https://www.youtube.com/embed/ZVtqpDQYsrE"
@@ -56,6 +56,8 @@ Playlist: https://www.youtube.com/playlist?list=PLPWKxB6Qd0X1BirihQPEr7HBUzA3ZlS
 const Video = (props) => {
   let {workmode} = props;
   let popovers;
+  let modal1Obj = {};
+
 
   switch (workmode) {
     case 'Production':
@@ -95,21 +97,19 @@ const Video = (props) => {
       break;
   }
 
-
-
   return (
   
        <div id="extraspace">
 
-
       <div>
-        <Button color="danger" onClick={Modals1.toggle}>Click Here</Button>
+    <Modals scope={modal1Obj}>
+        <Button color="danger" onClick={(x) => modal1Obj.toggle()}>Click Here</Button>
+    </Modals>
       </div>
-
 
    <CardGroup className='cardgroup1'>
       <Card>
-        <CardImg top width="100%" src={image1} alt="Card image cap" />
+        <CardImg onClick={(x) => modal1Obj.toggle()} top width="100%" src={image1} alt="Card image cap" />
         <CardBody>
         <CardTitle>Reel 2018</CardTitle>
         </CardBody>
