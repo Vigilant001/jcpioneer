@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+  font-family: 'BebasKai','Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+
+.nav-button:hover {
+  color: white !important;
+}
+
+.App-header {
+  background-color: rgb(133, 133, 133);
+  height: 150px;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+}
+
+#secondtitle {
+  font-family: 'BebasKai','Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+
+
+.App-title {
+  font-size: 2em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

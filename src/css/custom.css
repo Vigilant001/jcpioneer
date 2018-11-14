@@ -1,0 +1,240 @@
+.nav-button {
+	cursor: pointer; 
+	border: none;
+}
+.nav-item {
+	padding-top: 7px;
+	font-family: 'BebasKai','Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: rgb(255,255,255) !important;
+}
+.btn {
+	border: 2px !important;
+	font-family: 'BebasKai','Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+.btn-secondary {
+	color: rgb(188,188,188);
+	background-color: rgb(102,107,105) !important;
+	background-image: none !important;
+	padding: .5rem;
+	margin-top: .3rem;
+	margin-bottom: .5rem;
+	letter-spacing: 1px;
+}
+
+#lighterbutton {
+	color: rgb(231, 231, 231);
+	background-color: rgb(152, 156, 155, .5)
+}
+#homeButton {
+	color: rgb(102,107,105);
+}
+
+#navbarButtons {
+	color: rgb(102,107,105);
+}
+
+#grey_background {
+	background-color: rgb(49,51,46);
+}
+
+.blink,.blink:visited {
+	color: #fff
+}
+
+.blink:hover{color: #707070}
+
+#section_Home {
+
+	max-height: 350px;
+	background-color: rgba(0, 0, 0, 0)
+	
+}
+
+
+#section_About {
+	min-height: 350px;
+	max-height: 600px;
+	background-color: rgb(0,0,0,.0)
+	
+}
+
+#section_Video {
+	
+	min-height: 300px;
+	background-color: rgb(0,0,0,.0)
+	
+}
+
+.nav-link { 
+	color: rgb(102,107,105) !important;
+}
+
+.nav-item { 
+	color: rgb(102,107,105) !important;
+}
+
+.navbar-brand:hover {
+	color: rgb(80, 87, 83) !important;
+
+}
+
+.nav-item:hover {
+	color: rgb(80, 87, 83) !important;
+}
+
+h5 {
+	font-size: 1.3rem;
+	font-family: 'BebasKai','Helvetica Neue', Helvetica, Arial, sans-serif;
+	letter-spacing: 2px;
+}
+#section_Clients {
+
+	background-color: rgb(0,0,0,.0)
+}
+#section_Resume {
+
+	
+	background-color: rgb(0,0,0,.0)
+}
+
+#extraspace {
+	padding-bottom: 40px;
+}
+
+#videospacing {
+	padding-bottom: 15px;
+}
+#section_Connect {
+	max-height: 600px;
+	min-height: 400px;
+	background-color: rgb(0,0,0,.0)
+}
+
+#clientscard {
+	padding-bottom: 100px;
+}
+
+#centerThis {
+	text-align: center;
+	background-color: rgb(102,107,105);
+	font-family: 'BebasKai','Helvetica Neue', Helvetica, Arial, sans-serif;
+	padding-top: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#centerThis2 {
+	text-align: left;
+	background-color: rgb(80, 87, 83);
+	font-family: 'BebasKai','Helvetica Neue', Helvetica, Arial, sans-serif;
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 15px;
+}
+
+#toggle {
+	font-family: 'BebasKai','Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#Popover2 {
+	color: rgb(188,188,188);
+	background-color: rgba(102,107,105,.8) !important;
+	background-image: none !important;
+	padding: .5rem;
+	margin-top: 1rem;
+	margin-left: 10px;
+	letter-spacing: 1px;
+
+}
+
+.page{
+	background-color: rgb(57, 59, 59);
+	border: none;
+
+}
+
+.navbar { 
+	border: none !important;
+	background-color: rgb(221,221,221,.8) !important;
+}
+
+.navbar-brand {
+	padding-top: 5px;
+	color: rgb(80, 87, 83);
+}
+
+#buttons2 {
+	padding-right: 4px;
+	padding-left: 4px;
+}
+
+@font-face { font-family: Crystal Sky; src: url('Crystal-Sky.otf'); }
+@font-face { font-family: Gotham Book; src: url('GothamBook.ttf'); }
+@font-face { font-family: Gotham Bold; src: url('GothamBold.ttf'); }
+@font-face { font-family: BebasKai; src: url('BebasKai.ttf'); }
+  
+#section_Home * .page_title{
+	font-family: 'BebasKai','Helvetica Neue', Helvetica, Arial, sans-serif;
+	text-transform: none;
+	font-size: 50px;
+	font-weight: normal;
+	color: rgba(255,255,255,1) !important;
+}
+
+.map-size {
+	height: 300px;
+	width: auto;
+}
+
+.church_title{
+	font-family: 'BebasKai','Helvetica Neue', Helvetica, Arial, sans-serif;
+	text-transform: none;
+	font-size: 80px;
+	padding-top: 20px;
+
+}
+
+
+.page_title{
+	color:rgba(228, 228, 228, 0.9);
+	padding-top: 50px;
+	font-family: 'BebasKai','Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.thumbsize {
+  max-block-size: 7cm;
+
+}
+
+.cardgroup1 {
+	padding-bottom: 15px;
+}
+
+.cardgroup2 {
+    padding-bottom: 40px;
+}
+.card {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+ .thumbnails { 
+	min-width: 0;
+	margin: 5px;
+ }
+ img.go {
+	width: 450px;
+	max-width: 100%; 
+	max-height: 450px; 
+  }
+ }
+
+/*
+.dropdown-item{
+	padding: 5px;
+}
+
+padding: .5rem;
+	margin-top: 1rem;
+	margin-left: 5px;
+*/
