@@ -22,7 +22,7 @@ return (
       <Modal isOpen={modalOpen} toggle={this.toggle.bind(this)} className={this.props.className}>
         <ModalHeader toggle={this.toggle.bind(this)}>Modal title</ModalHeader>
         <ModalBody>
-        { ModalType == "media" &&<YourMediaComponent {...other} />}
+        { ModalType == "media" &&<div {...other} />}
        </ModalBody>
       </Modal>
     </div>
