@@ -14,6 +14,7 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 render() {
   let {children, scope, modalBody} = this.props;
   let modalOpen = this.modalOpen;
+  scope.toggle =this.toggle.bind(this);
   
 
 return (

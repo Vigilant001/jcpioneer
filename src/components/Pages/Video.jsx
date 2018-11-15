@@ -112,68 +112,83 @@ const Video = (props) => {
 
   return (
   
-       <div id="extraspace">
+  <div>
 
-    {/*}
-    <div>
-    <Modals scope={modal1Obj}>
-        <Button color="danger" onClick={(x) => modal1Obj.toggle()}>Click Here</Button>
-    </Modals>
-      </div>
-  */}
-    <div>
+    <CardGroup className='cardgroup1'>
+      <Card>
+      <Modals 
+       modalBody={<iframe src="https://www.youtube.com/embed/_aXmF2CdVnc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        }
+       scope={modal1Obj}{...props}>
+        <Button onClick={(x) => modal1Obj.toggle()}><CardImg top width="100%" src={image1} alt="Card image cap" /></Button>
+        <CardBody>
+        <CardTitle>Reel 2018</CardTitle>
+        </CardBody>
+      </Modals>
+      </Card>
+      <Card>
       <Modals 
        modalBody={<iframe src="https://www.youtube.com/embed/vOLQyKn8BMY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         }
        scope={modal1Obj}{...props}>
-        <Button color="danger" onClick={(x) => modal1Obj.toggle()}>Testing Modals</Button>
+        <Button onClick={(x) => modal1Obj.toggle()}><CardImg top width="100%" src={image2} alt="Card image cap" /></Button>
+        <CardBody>
+        <CardTitle>Sumo Logic - Illuminate 2018</CardTitle>
+        </CardBody>
       </Modals>
-    </div>
-
-   <CardGroup className='cardgroup1'>
-      <Card>
-      <CardImg top width="100%" src={image1} alt="Card image cap" />
-        <CardBody>
-        <CardTitle>Reel 2018</CardTitle>
-        </CardBody>
       </Card>
       <Card>
-        <CardImg top width="100%" src={image2} alt="Card image cap" />
+      <Modals 
+       modalBody={<iframe src="https://www.youtube.com/embed/ZVtqpDQYsrE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        }
+       scope={modal1Obj}{...props}>
+        <Button onClick={(x) => modal1Obj.toggle()}><CardImg top width="100%" src={image3} alt="Card image cap" /></Button>
         <CardBody>
-          <CardTitle>Illuminate Conference</CardTitle>
+        <CardTitle>CMTC - WIM 2018</CardTitle>
         </CardBody>
-      </Card>
-      <Card>
-        <CardImg top width="100%" src={image3} alt="Card image cap" />
-        <CardBody>
-          <CardTitle>WIM 2018</CardTitle>
-        </CardBody>
+      </Modals>
       </Card>
     </CardGroup>
+
     <CardGroup className='cardgroup2'>
       <Card>
-        <CardImg top width="100%" src={image4} alt="Card image cap" />
+      <Modals 
+       modalBody={<iframe src="https://www.youtube.com/embed/i9xllP5jVV4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        }
+       scope={modal1Obj}{...props}>
+        <Button onClick={(x) => modal1Obj.toggle()}><CardImg top width="100%" src={image4} alt="Card image cap" /></Button>
         <CardBody>
         <CardTitle>Real Estate Cafe</CardTitle>
         </CardBody>
+      </Modals>
       </Card>
       <Card>
-        <CardImg top width="100%" src={image5} alt="Card image cap" />
+      <Modals 
+       modalBody={<iframe src="https://www.youtube.com/embed/8vC4a0HOab0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        }
+       scope={modal1Obj}{...props}>
+        <Button onClick={(x) => modal1Obj.toggle()}><CardImg top width="100%" src={image5} alt="Card image cap" /></Button>
         <CardBody>
-          <CardTitle>Karina & Darren</CardTitle>
+        <CardTitle>Karina & Darren</CardTitle>
         </CardBody>
+      </Modals>
       </Card>
       <Card>
-        <CardImg top width="100%" src={image6} alt="Card image cap" />
+      <Modals 
+       modalBody={<iframe src="https://www.youtube.com/embed/xdPT7OMIk9c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        }
+       scope={modal1Obj}{...props}>
+        <Button onClick={(x) => modal1Obj.toggle()}><CardImg top width="100%" src={image6} alt="Card image cap" /></Button>
         <CardBody>
-          <CardTitle>Greyback Granola</CardTitle>
+        <CardTitle>Greyback Granola</CardTitle>
         </CardBody>
+      </Modals>
       </Card>
     </CardGroup>
 
 
     <div> <Button color='secondary' target='about_blank' href="https://www.youtube.com/playlist?list=PLPWKxB6Qd0X1BirihQPEr7HBUzA3ZlSJG" class="btn pd-5 btn-default">Video Archive</Button> 
-  </div>
+    </div>
 
     {
       popovers.map((popover, i) => {
