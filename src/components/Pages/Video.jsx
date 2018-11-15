@@ -10,10 +10,11 @@ import {image1, image2, image3, image4, image5, image6} from 'img';
 const YouTube1 = (props) => {
   return <div width="560" height="315" src="https://www.youtube.com/embed/_aXmF2CdVnc"></div>
 }
-/*
-const YouTube1 = (props) => {
+
+const Video1 = (props) => {
   return <iframe {...props} width="560" height="315" src="https://www.youtube.com/embed/_aXmF2CdVnc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 }
+/*
 const YouTube = (props) => {
     return <iframe {...props} src="https://www.youtube.com/embed/vOLQyKn8BMY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   }
@@ -32,14 +33,14 @@ const YouTube5 = (props) => {
 const YouTube6 = (props) => {
   return <iframe {...props} width="560" height="315" src="https://www.youtube.com/embed/xdPT7OMIk9c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 }
-
+----
 var BigPicture = require('bigpicture')
 
 BigPicture({
   el: this,
   ytSrc: '_aXmF2CdVnc'
 })
-
+----
 /*
 <img src='/jdc_resume_2018_film_1.png'/>
 
@@ -50,13 +51,25 @@ Karina and Darren: src="https://www.youtube.com/embed/8vC4a0HOab0"
 Greyback Granola: src="https://www.youtube.com/embed/xdPT7OMIk9c"
 }
 Playlist: https://www.youtube.com/playlist?list=PLPWKxB6Qd0X1BirihQPEr7HBUzA3ZlSJG
+----
+  let VideoObj = {
+    VideoOptions: function VideoOptions(props) {
+      return <div> {props.videoID} </div>
+    }
+  }
+
+  function Video1() {
+    return <VideoObj.VideoOptions videoID='https://www.youtube.com/embed/_aXmF2CdVnc'/>
+  }
+
 */
 
 
 const Video = (props) => {
   let {workmode} = props;
   let popovers;
-  let modal1Obj = {};
+  let modal1Obj = {}
+  
 
 
   switch (workmode) {
@@ -101,15 +114,25 @@ const Video = (props) => {
   
        <div id="extraspace">
 
-      <div>
+    {/*}
+    <div>
     <Modals scope={modal1Obj}>
         <Button color="danger" onClick={(x) => modal1Obj.toggle()}>Click Here</Button>
     </Modals>
       </div>
+  */}
+    <div>
+      <Modals 
+       modalBody={<iframe src="https://www.youtube.com/embed/vOLQyKn8BMY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        }
+       scope={modal1Obj}{...props}>
+        <Button color="danger" onClick={(x) => modal1Obj.toggle()}>Testing Modals</Button>
+      </Modals>
+    </div>
 
    <CardGroup className='cardgroup1'>
       <Card>
-        <CardImg onClick={(x) => modal1Obj.toggle()} top width="100%" src={image1} alt="Card image cap" />
+      <CardImg top width="100%" src={image1} alt="Card image cap" />
         <CardBody>
         <CardTitle>Reel 2018</CardTitle>
         </CardBody>

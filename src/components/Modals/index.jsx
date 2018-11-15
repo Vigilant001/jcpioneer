@@ -12,18 +12,18 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 
 render() {
-  let {children, scope, ModalType, ...other} = this.props;
+  let {children, scope, modalBody} = this.props;
   let modalOpen = this.modalOpen;
-  scope.toggle =this.toggle.bind(this);
- 
+  
+
 return (
     <div>
       {children}
       <Modal isOpen={modalOpen} toggle={this.toggle.bind(this)} className={this.props.className}>
         <ModalHeader toggle={this.toggle.bind(this)}>Modal title</ModalHeader>
         <ModalBody>
-        { ModalType == "media" &&<div {...other} />}
-       </ModalBody>
+         {modalBody}
+        </ModalBody>
       </Modal>
     </div>
   );
