@@ -71,7 +71,6 @@ const Video = (props) => {
   let modal1Obj = {}
   
 
-
   switch (workmode) {
     case 'Production':
       popovers = [
@@ -120,7 +119,7 @@ const Video = (props) => {
        modalBody={<iframe src="https://www.youtube.com/embed/_aXmF2CdVnc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         }
        scope={modal1Obj}{...props}>
-        <Button onClick={(x) => modal1Obj.toggle()}><CardImg top width="100%" src={image1} alt="Card image cap" /></Button>
+        <Button className="thumbbuttons" onClick={(x) => modal1Obj.toggle()}><CardImg top width="100%" src={image1} alt="Card image cap" /></Button>
         <CardBody>
         <CardTitle>Reel 2018</CardTitle>
         </CardBody>

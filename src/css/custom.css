@@ -21,6 +21,13 @@
 	letter-spacing: 1px;
 }
 
+.thumbbuttons {
+	border: 0px;
+	padding: none !important;
+	background-color: none !important; 
+	
+}
+
 #lighterbutton {
 	color: rgb(231, 231, 231);
 	background-color: rgb(152, 156, 155, .5)
@@ -220,7 +227,7 @@ h5 {
 	flex-wrap: wrap;
  .thumbnails { 
 	min-width: 0;
-	margin: 5px;
+	margin: 0px;
  }
  img.go {
 	width: 450px;
