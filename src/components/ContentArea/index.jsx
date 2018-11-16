@@ -17,16 +17,18 @@ import * as backgrounds from 'img';
     @action toggle() {
       this.isOpen = !this.isOpen;
     }
-
+ 
     render() {
       let {data} = this.props.dataState;
-    return (
+      
+    return ( 
       <div> 
         {data.pages.map(page=> {
           let Tag = Pages[page.name];
           if(!Tag) return null;
           let image = backgrounds[page.name+'_'+data.workmode] || backgrounds[page.name];
           let BodyTag = image? CardImgOverlay:CardBody;
+
           return (
             <div id={`section_${page.name}`}>
               <Card className='page'>

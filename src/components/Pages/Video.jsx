@@ -14,34 +14,8 @@ const YouTube1 = (props) => {
 const Video1 = (props) => {
   return <iframe {...props} width="560" height="315" src="https://www.youtube.com/embed/_aXmF2CdVnc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 }
-/*
-const YouTube = (props) => {
-    return <iframe {...props} src="https://www.youtube.com/embed/vOLQyKn8BMY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  }
-const YouTube2 = (props) => {
-  return <iframe {...props} width="560" height="315" src="https://www.youtube.com/embed/ZVtqpDQYsrE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-}
-const YouTube3 = (props) => {
-  return <iframe {...props} width="560" height="315" src="https://www.youtube.com/embed/i9xllP5jVV4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-}
-const YouTube4 = (props) => {
-  return <iframe {...props} width="560" height="315" src="https://www.youtube.com/embed/vOLQyKn8BMY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-}
-const YouTube5 = (props) => {
-  return <iframe {...props} width="560" height="315" src="https://www.youtube.com/embed/8vC4a0HOab0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-}
-const YouTube6 = (props) => {
-  return <iframe {...props} width="560" height="315" src="https://www.youtube.com/embed/xdPT7OMIk9c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-}
-----
-var BigPicture = require('bigpicture')
 
-BigPicture({
-  el: this,
-  ytSrc: '_aXmF2CdVnc'
-})
-----
-/*
+{/*
 <img src='/jdc_resume_2018_film_1.png'/>
 
 Illuminate: src="https://www.youtube.com/embed/ZVtqpDQYsrE"
@@ -62,8 +36,7 @@ Playlist: https://www.youtube.com/playlist?list=PLPWKxB6Qd0X1BirihQPEr7HBUzA3ZlS
     return <VideoObj.VideoOptions videoID='https://www.youtube.com/embed/_aXmF2CdVnc'/>
   }
 
-*/
-
+*/}
 
 const Video = (props) => {
   let {workmode} = props;
@@ -111,21 +84,20 @@ const Video = (props) => {
 
   return (
 
- <CardGroup className='cardgroup1'>
-{[{
- scope:{},
-src:"https://www.youtube.com/embed/vOLQyKn8BMY",
-imgSrc:image1
-},{
-scope:{},
-src:"https://www.youtube.com/embed/vOLQyKn8BMY",
-imgSrc:image2
-},
-].map(({src, scope,imgSrc})=>(
+   <CardGroup className='cardgroup1'>
+  {[
+  {scope:{},
+   src:"https://www.youtube.com/embed/vOLQyKn8BMY",
+   imgSrc:image1
+  },{
+   scope:{},
+   src:"https://www.youtube.com/embed/vOLQyKn8BMY",
+   imgSrc:image2
+  },
+  ].map(({scope, src,imgSrc})=> (
       <Card>
       <Modals 
-       modalBody={<iframe src={src} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        }
+       modalBody={<iframe src={src} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>}
        scope={scope}{...props}>
         <Button className="thumbbuttons" onClick={(x) => scope.toggle()}><CardImg top width="100%" src={imgSrc} alt="Card image cap" /></Button>
         <CardBody>
@@ -133,93 +105,14 @@ imgSrc:image2
         </CardBody>
       </Modals>
       </Card>
-)} </CardGroup>
+    ))}</CardGroup>
 
-
-/*
-    <CardGroup className='cardgroup1'>
-      <Card>
-      <Modals 
-       modalBody={<iframe src="https://www.youtube.com/embed/_aXmF2CdVnc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        }
-       scope={modal1Obj}{...props}>
-        <Button className="thumbbuttons" onClick={(x) => modal1Obj.toggle()}><CardImg top width="100%" src={image1} alt="Card image cap" /></Button>
-        <CardBody>
-        <CardTitle>Reel 2018</CardTitle>
-        </CardBody>
-      </Modals>
-      </Card>
-      <Card>
-      <Modals 
-       modalBody={<iframe src="https://www.youtube.com/embed/vOLQyKn8BMY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        }
-       scope={modal1Obj}{...props}>
-        <Button onClick={(x) => modal1Obj.toggle()}><CardImg top width="100%" src={image2} alt="Card image cap" /></Button>
-        <CardBody>
-        <CardTitle>Sumo Logic - Illuminate 2018</CardTitle>
-        </CardBody>
-      </Modals>
-      </Card>
-      <Card>
-      <Modals 
-       modalBody={<iframe src="https://www.youtube.com/embed/ZVtqpDQYsrE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        }
-       scope={modal1Obj}{...props}>
-        <Button onClick={(x) => modal1Obj.toggle()}><CardImg top width="100%" src={image3} alt="Card image cap" /></Button>
-        <CardBody>
-        <CardTitle>CMTC - WIM 2018</CardTitle>
-        </CardBody>
-      </Modals>
-      </Card>
-    </CardGroup>
-
-    <CardGroup className='cardgroup2'>
-      <Card>
-      <Modals 
-       modalBody={<iframe src="https://www.youtube.com/embed/i9xllP5jVV4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        }
-       scope={modal1Obj}{...props}>
-        <Button onClick={(x) => modal1Obj.toggle()}><CardImg top width="100%" src={image4} alt="Card image cap" /></Button>
-        <CardBody>
-        <CardTitle>Real Estate Cafe</CardTitle>
-        </CardBody>
-      </Modals>
-      </Card>
-      <Card>
-      <Modals 
-       modalBody={<iframe src="https://www.youtube.com/embed/8vC4a0HOab0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        }
-       scope={modal1Obj}{...props}>
-        <Button onClick={(x) => modal1Obj.toggle()}><CardImg top width="100%" src={image5} alt="Card image cap" /></Button>
-        <CardBody>
-        <CardTitle>Karina & Darren</CardTitle>
-        </CardBody>
-      </Modals>
-      </Card>
-      <Card>
-      <Modals 
-       modalBody={<iframe src="https://www.youtube.com/embed/xdPT7OMIk9c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        }
-       scope={modal1Obj}{...props}>
-        <Button onClick={(x) => modal1Obj.toggle()}><CardImg top width="100%" src={image6} alt="Card image cap" /></Button>
-        <CardBody>
-        <CardTitle>Greyback Granola</CardTitle>
-        </CardBody>
-      </Modals>
-      </Card>
-    </CardGroup>
-
-*/
-    <div> <Button color='secondary' target='about_blank' href="https://www.youtube.com/playlist?list=PLPWKxB6Qd0X1BirihQPEr7HBUzA3ZlSJG" class="btn pd-5 btn-default">Video Archive</Button> 
+    <div> <Button color='secondary' target='about_blank' href="https://www.youtube.com/playlist?list=PLPWKxB6Qd0X1BirihQPEr7HBUzA3ZlSJG" class="btn pd-5 btn-default">Video Archive</Button>
     </div>
+    
+      (popovers.map((popover, i) => {
+      return <PopoverItem key={i} item={popover} id={`${props.name}-${props.workmode}-${i}`}/>
+      }
 
-    {
-      popovers.map((popover, i) => {
-        return <PopoverItem key={i} item={popover} id={`${props.name}-${props.workmode}-${i}`}/>;
-      })
-    }
-);
-
-};
-
+      
 export default Video;
