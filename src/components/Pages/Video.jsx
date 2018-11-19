@@ -87,7 +87,7 @@ const Video = (props) => {
   {[
   {
    scope:{},
-   src:{src:"https://www.youtube.com/embed/vOLQyKn8BMY",},
+   src:"https://www.youtube.com/embed/vOLQyKn8BMY",
    imgSrc:image1
   },
   ].map(({scope, src,imgSrc})=> (
