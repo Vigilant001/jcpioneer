@@ -105,8 +105,8 @@ const Video = (props) => {
    },
   ].map(({scope, src, imgSrc, title})=> (
       <Card>
-      <Modals className='thumbsizes'
-       modalBody={<iframe src={src} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>}
+      <Modals
+       modalBody={<iframe className='thumbsizes' src={src} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>}
        scope={scope}{...props}>
         <Button className="thumbbuttons" onClick={(x) => scope.toggle()}><CardImg top width="100%" src={imgSrc} alt="Card image cap" /></Button>
         <CardBody>

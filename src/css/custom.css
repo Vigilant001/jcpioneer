@@ -210,7 +210,9 @@ h5 {
 }
 
 .thumbsizes {
-	min-height: 480px;
+	min-height: 720px;
+	min-width: 1280px;
+	
 
 }
 
