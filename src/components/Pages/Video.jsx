@@ -104,8 +104,8 @@ const Video = (props) => {
     title:"WIM 2018"
    },
   ].map(({scope, src, imgSrc, title})=> (
-      <Card>
-      <Modals
+      <Card lg={{size: 'auto'}}>
+      <Modals className="modals1"
        modalBody={<iframe className='thumbsizes' src={src} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>}
        scope={scope}{...props}>
         <Button className="thumbbuttons" onClick={(x) => scope.toggle()}><CardImg top width="100%" src={imgSrc} alt="Card image cap" /></Button>

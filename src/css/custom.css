@@ -212,8 +212,11 @@ h5 {
 .thumbsizes {
 	min-height: 720px;
 	min-width: 1280px;
-	
+	padding: 15px;
+}
 
+.modals1 {
+	min-width: 1300px;
 }
 
 .cardgroup1 {
