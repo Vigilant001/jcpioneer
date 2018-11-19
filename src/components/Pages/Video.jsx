@@ -87,17 +87,30 @@ const Video = (props) => {
   {[
   {
    scope:{},
-   src:"https://www.youtube.com/embed/vOLQyKn8BMY",
-   imgSrc:image1
+   src:"https://www.youtube.com/embed/_aXmF2CdVnc",
+   imgSrc:image1,
+   title:"Reel 2018"
   },
-  ].map(({scope, src,imgSrc})=> (
+  {
+    scope:{},
+    src:"https://www.youtube.com/embed/ZVtqpDQYsrE",
+    imgSrc:image2,
+    title:"Sumo Logic Illuminate"
+   },
+   {
+    scope:{},
+    src:"https://www.youtube.com/embed/i9xllP5jVV4",
+    imgSrc:image3,
+    title:"WIM 2018"
+   },
+  ].map(({scope, src, imgSrc, title})=> (
       <Card>
       <Modals 
        modalBody={<iframe src={src} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>}
        scope={scope}{...props}>
         <Button className="thumbbuttons" onClick={(x) => scope.toggle()}><CardImg top width="100%" src={imgSrc} alt="Card image cap" /></Button>
         <CardBody>
-        <CardTitle>Reel 2018</CardTitle>
+        <CardTitle>{title}</CardTitle>
         </CardBody>
       </Modals>
       </Card>
