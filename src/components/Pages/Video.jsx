@@ -83,7 +83,7 @@ const Video = (props) => {
 
     <div>
 
-  <CardGroup>
+  <CardGroup id="extraspace">
   {[
   {
    scope:{},
@@ -104,7 +104,40 @@ const Video = (props) => {
     title:"WIM 2018"
    },
   ].map(({scope, src, imgSrc, title})=> (
-      <Card lg={{size: 'auto'}}>
+      <Card id="modalcards" lg={{size: 'auto'}}>
+      <Modals className="modals1"
+       modalBody={<iframe className='thumbsizes' src={src} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>}
+       scope={scope}{...props}>
+        <Button className="thumbbuttons" onClick={(x) => scope.toggle()}><CardImg top width="100%" src={imgSrc} alt="Card image cap" /></Button>
+        <CardBody>
+        <CardTitle>{title}</CardTitle>
+        </CardBody>
+      </Modals>
+      </Card>
+    ))}</CardGroup>
+
+      <CardGroup id="extraspace">
+  {[
+  {
+  scope:{},
+  src:"https://www.youtube.com/embed/_aXmF2CdVnc",
+  imgSrc:image4,
+  title:"Real Estate Cafe"
+ },
+ {
+   scope:{},
+   src:"https://www.youtube.com/embed/8vC4a0HOab0",
+   imgSrc:image5,
+   title:"Karina & Darren"
+  },
+  {
+   scope:{},
+   src:"https://www.youtube.com/embed/xdPT7OMIk9c",
+   imgSrc:image6,
+   title:"Greyback Granola"
+  },
+  ].map(({scope, src, imgSrc, title})=> (
+      <Card id="modalcards" lg={{size: 'auto'}}>
       <Modals className="modals1"
        modalBody={<iframe className='thumbsizes' src={src} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>}
        scope={scope}{...props}>

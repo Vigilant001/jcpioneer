@@ -219,6 +219,9 @@ h5 {
 	min-width: 1300px;
 }
 
+#modalcards {
+	background-color: rgb(57, 59, 59);
+}
 .cardgroup1 {
 	padding-bottom: 15px;
 }
