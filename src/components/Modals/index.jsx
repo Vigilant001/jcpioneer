@@ -23,7 +23,7 @@ return (
       <Modal isOpen={modalOpen} toggle={this.toggle.bind(this)} className={this.props.className}>
         <ModalHeader toggle={this.toggle.bind(this)}>Modal title</ModalHeader>
         <ModalBody>
-         {modalBody.name}
+         {modalBody}
         </ModalBody>
       </Modal>
     </div>

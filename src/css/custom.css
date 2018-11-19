@@ -209,8 +209,8 @@ h5 {
 	font-family: 'BebasKai','Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.thumbsize {
-  max-block-size: 7cm;
+.thumbsizes {
+	min-height: 480px;
 
 }
 
