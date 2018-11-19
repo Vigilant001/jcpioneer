@@ -1,32 +1,4 @@
-.nav-button {
-	cursor: pointer; 
-	border: none;
-}
-.nav-item {
-	padding-top: 7px;
-	font-family: 'BebasKai','Helvetica Neue', Helvetica, Arial, sans-serif;
-	color: rgb(255,255,255) !important;
-}
-.btn {
-	border: 2px !important;
-	font-family: 'BebasKai','Helvetica Neue', Helvetica, Arial, sans-serif !important;
-}
-.btn-secondary {
-	color: rgb(188,188,188);
-	background-color: rgb(102,107,105) !important;
-	background-image: none !important;
-	padding: .5rem;
-	margin-top: .3rem;
-	margin-bottom: .5rem;
-	letter-spacing: 1px;
-}
 
-.thumbbuttons {
-	border: 0px;
-	padding: none !important;
-	background-color: none !important; 
-	
-}
 
 #lighterbutton {
 	color: rgb(231, 231, 231);
@@ -41,7 +13,7 @@
 }
 
 #grey_background {
-	background-color: rgb(49,51,46);
+	background-color: rgb(53, 53, 53);
 }
 
 .blink,.blink:visited {
@@ -73,20 +45,23 @@
 }
 
 .nav-link { 
-	color: rgb(102,107,105) !important;
+	color:  rgb(102, 102, 102) !important;
 }
 
+.nav-link:hover {
+	color: rgb(136, 136, 136) !important;
+}
 .nav-item { 
 	color: rgb(102,107,105) !important;
 }
 
 .navbar-brand:hover {
-	color: rgb(80, 87, 83) !important;
+	color: rgb(90, 90, 90) !important;
 
 }
 
 .nav-item:hover {
-	color: rgb(80, 87, 83) !important;
+	color: rgb(121, 121, 121) !important;
 }
 
 h5 {
@@ -123,7 +98,7 @@ h5 {
 
 #centerThis {
 	text-align: center;
-	background-color: rgb(102,107,105);
+	background-color: rgb(110, 110, 110);
 	font-family: 'BebasKai','Helvetica Neue', Helvetica, Arial, sans-serif;
 	padding-top: 15px;
 	padding-left: 5px;
@@ -132,7 +107,7 @@ h5 {
 
 #centerThis2 {
 	text-align: left;
-	background-color: rgb(80, 87, 83);
+	background-color: rgb(88, 88, 88);
 	font-family: 'BebasKai','Helvetica Neue', Helvetica, Arial, sans-serif;
 	padding-top: 15px;
 	padding-left: 10px;
@@ -146,7 +121,7 @@ h5 {
 
 #Popover2 {
 	color: rgb(188,188,188);
-	background-color: rgba(102,107,105,.8) !important;
+	background-color: rgba(110, 110, 110, 0.8) !important;
 	background-image: none !important;
 	padding: .5rem;
 	margin-top: 1rem;
@@ -210,39 +185,65 @@ h5 {
 }
 
 .thumbsizes {
+	max-width: none !important;
 	min-height: 720px;
 	min-width: 1280px;
 	padding: 15px;
+	border: none !important;
+	
+}
+
+#thumbbuttons {
+	border: 0px;
+	padding: none !important;
+	background-color: none !important; 
+	border: none !important;
+	background-color: rgb(57, 59, 59);
 }
 
 .modals1 {
-	min-width: 1300px;
+	min-width: 1320px;
+	border: none !important;
+	background-color: rgb(57, 59, 59);
 }
 
 #modalcards {
 	background-color: rgb(57, 59, 59);
+	
 }
-.cardgroup1 {
-	padding-bottom: 15px;
+.nav-button {
+	cursor: pointer; 
+	border: none;
+	
 }
 
-.cardgroup2 {
-    padding-bottom: 40px;
+.nav-item {
+	padding-top: 7px;
+	font-family: 'BebasKai','Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: rgb(255,255,255) !important;
 }
-.card {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
- .thumbnails { 
-	min-width: 0;
-	margin: 0px;
- }
+.btn {
+	border: 0px !important;
+	font-family: 'BebasKai','Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+.btn-secondary {
+	color: rgb(188,188,188);
+	background-color:  rgb(57, 59, 59) !important;
+	background-image: none !important;
+	padding: .5rem;
+	margin-top: .3rem;
+	margin-bottom: .5rem;
+	letter-spacing: 1px;
+}
+
+
+
  img.go {
 	width: 450px;
 	max-width: 100%; 
 	max-height: 450px; 
   }
- }
+ 
 
 /*
 .dropdown-item{

@@ -63,7 +63,7 @@ const Video = (props) => {
           placement: 'bottom',
           text: 'About James',
           header: 'Film Experience',
-          description: "James has over 12 years experience working in writing, directing, DP, and editing for commercials, corporate videos, documentaries, and event capture. James have also spent a year developing and training professional livestreaming platforms. James has experience in 3D character animation and 3D generalist work, trained by Pixar animators. This website was also developed by James, using React Javascript framework."
+          description: "James has over 12 years experience working in writing, directing, DP, and editing for commercials, corporate videos, documentaries, and event capture. James have also spent a year developing and training professional livestreaming platforms. James has experience in 3D character animation and 3D generalist work, trained by Pixar animators. This website was also developed fully custom by James, using React Javascript framework and reactstrap styling tools."
         },
       ];
       break;
@@ -104,11 +104,11 @@ const Video = (props) => {
     title:"WIM 2018"
    },
   ].map(({scope, src, imgSrc, title})=> (
-      <Card id="modalcards" lg={{size: 'auto'}}>
-      <Modals className="modals1"
+      <Card id="modalcards">
+      <Modals className="modals1" 
        modalBody={<iframe className='thumbsizes' src={src} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>}
        scope={scope}{...props}>
-        <Button className="thumbbuttons" onClick={(x) => scope.toggle()}><CardImg top width="100%" src={imgSrc} alt="Card image cap" /></Button>
+        <Button id="thumbbuttons" onClick={(x) => scope.toggle()}><CardImg top width="100%" src={imgSrc} alt="Card image cap" /></Button>
         <CardBody>
         <CardTitle>{title}</CardTitle>
         </CardBody>
@@ -120,7 +120,7 @@ const Video = (props) => {
   {[
   {
   scope:{},
-  src:"https://www.youtube.com/embed/_aXmF2CdVnc",
+  src:"https://www.youtube.com/embed/i9xllP5jVV4",
   imgSrc:image4,
   title:"Real Estate Cafe"
  },
@@ -137,11 +137,11 @@ const Video = (props) => {
    title:"Greyback Granola"
   },
   ].map(({scope, src, imgSrc, title})=> (
-      <Card id="modalcards" lg={{size: 'auto'}}>
+      <Card id="modalcards">
       <Modals className="modals1"
        modalBody={<iframe className='thumbsizes' src={src} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>}
        scope={scope}{...props}>
-        <Button className="thumbbuttons" onClick={(x) => scope.toggle()}><CardImg top width="100%" src={imgSrc} alt="Card image cap" /></Button>
+        <Button id="thumbbuttons" onClick={(x) => scope.toggle()}><CardImg top width="100%" src={imgSrc} alt="Card image cap" /></Button>
         <CardBody>
         <CardTitle>{title}</CardTitle>
         </CardBody>
