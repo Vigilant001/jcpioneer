@@ -6,7 +6,7 @@ import { Document } from 'react-pdf'
 import {Res} from 'img';
 import {image1, image2, image3, image4, image5, image6} from 'img';
 
-
+/*
 const YouTube1 = (props) => {
   return <div width="560" height="315" src="https://www.youtube.com/embed/_aXmF2CdVnc"></div>
 }
@@ -15,7 +15,6 @@ const Video1 = (props) => {
   return <iframe {...props} width="560" height="315" src="https://www.youtube.com/embed/_aXmF2CdVnc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 }
 
-{/*
 <img src='/jdc_resume_2018_film_1.png'/>
 
 Illuminate: src="https://www.youtube.com/embed/ZVtqpDQYsrE"
@@ -35,14 +34,12 @@ Playlist: https://www.youtube.com/playlist?list=PLPWKxB6Qd0X1BirihQPEr7HBUzA3ZlS
   function Video1() {
     return <VideoObj.VideoOptions videoID='https://www.youtube.com/embed/_aXmF2CdVnc'/>
   }
-
-*/}
+*/
 
 const Video = (props) => {
   let {workmode} = props;
   let popovers;
-  let modal1Obj = {}
-  
+  let source1 = <video src="https://www.youtube.com/embed/vOLQyKn8BMY"/>
 
   switch (workmode) {
     case 'Production':
@@ -80,19 +77,18 @@ const Video = (props) => {
         },
       ];
       break;
-  }
+    }
 
-  return (
+  return (<div id="extraspace">
 
-   <CardGroup className='cardgroup1'>
+    <div>
+
+  <CardGroup className='cardgroup1'>
   {[
-  {scope:{},
-   src:"https://www.youtube.com/embed/vOLQyKn8BMY",
-   imgSrc:image1
-  },{
+  {
    scope:{},
-   src:"https://www.youtube.com/embed/vOLQyKn8BMY",
-   imgSrc:image2
+   src:{src:"https://www.youtube.com/embed/vOLQyKn8BMY",},
+   imgSrc:image1
   },
   ].map(({scope, src,imgSrc})=> (
       <Card>
@@ -107,12 +103,20 @@ const Video = (props) => {
       </Card>
     ))}</CardGroup>
 
-    <div> <Button color='secondary' target='about_blank' href="https://www.youtube.com/playlist?list=PLPWKxB6Qd0X1BirihQPEr7HBUzA3ZlSJG" class="btn pd-5 btn-default">Video Archive</Button>
+    <Button color='secondary' target='about_blank' href="https://www.youtube.com/playlist?list=PLPWKxB6Qd0X1BirihQPEr7HBUzA3ZlSJG" class="btn pd-5 btn-default">Video Archive</Button>
     </div>
-    
-      (popovers.map((popover, i) => {
-      return <PopoverItem key={i} item={popover} id={`${props.name}-${props.workmode}-${i}`}/>
-      }
 
-      
+ 
+    {
+      popovers.map((popover, i) => { 
+        return <PopoverItem key={i} item={popover} id={`${props.name}-${props.workmode}-${i}`}
+      />;
+    })
+  }
+  
+  </div>);
+
+};
+
 export default Video;
+
