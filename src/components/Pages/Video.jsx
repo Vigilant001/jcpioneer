@@ -103,10 +103,10 @@ const Video = (props) => {
     imgSrc:image3,
     title:"WIM 2018"
    },
-  ].map(({scope, src, imgSrc, title})=> (
+  ].map(({scope, src, imgSrc, title,})=> (
       <Card id="modalcards">
       <Modals className="modals1" 
-       modalBody={<iframe className='thumbsizes' src={src} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>}
+       modalBody={<iframe className="modalvideo" src={src} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>}
        scope={scope}{...props}>
         <Button id="thumbbuttons" onClick={(x) => scope.toggle()}><CardImg top width="100%" src={imgSrc} alt="Card image cap" /></Button>
         <CardBody>
@@ -139,7 +139,7 @@ const Video = (props) => {
   ].map(({scope, src, imgSrc, title})=> (
       <Card id="modalcards">
       <Modals className="modals1"
-       modalBody={<iframe className='thumbsizes' src={src} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>}
+       modalBody={<iframe className="modalvideo" src={src} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>}
        scope={scope}{...props}>
         <Button id="thumbbuttons" onClick={(x) => scope.toggle()}><CardImg top width="100%" src={imgSrc} alt="Card image cap" /></Button>
         <CardBody>

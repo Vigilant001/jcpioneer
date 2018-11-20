@@ -21,8 +21,8 @@ return (
     <div>
       {children}
       <Modal isOpen={modalOpen} toggle={this.toggle.bind(this)} className={this.props.className}>
-        <ModalHeader toggle={this.toggle.bind(this)}>Modal title</ModalHeader>
-        <ModalBody>
+        <ModalHeader toggle={this.toggle.bind(this)}></ModalHeader>
+        <ModalBody className="lightbox">
          {modalBody}
         </ModalBody>
       </Modal>

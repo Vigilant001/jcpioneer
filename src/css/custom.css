@@ -121,7 +121,7 @@ h5 {
 
 #Popover2 {
 	color: rgb(188,188,188);
-	background-color: rgba(110, 110, 110, 0.8) !important;
+	background-color: rgba(78, 78, 78, 0.8) !important;
 	background-image: none !important;
 	padding: .5rem;
 	margin-top: 1rem;
@@ -202,7 +202,7 @@ h5 {
 }
 
 .modals1 {
-	min-width: 1320px;
+	max-width: none !important;
 	border: none !important;
 	background-color: rgb(57, 59, 59);
 }
@@ -216,7 +216,22 @@ h5 {
 	border: none;
 	
 }
+.modalvideo {
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	padding-right: 30px;
+	padding-bottom: 30px;
 
+}
+
+.lightbox {
+	background-color: black;
+	max-width: none !important;
+	min-height: 720px;
+}
 .nav-item {
 	padding-top: 7px;
 	font-family: 'BebasKai','Helvetica Neue', Helvetica, Arial, sans-serif;
