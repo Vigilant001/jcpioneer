@@ -11,8 +11,9 @@ import {Res} from 'img';
 const Resume = () => {
   return ([
     <div>
+
       <div id='buttons2'> 
-      <Button  id='lighterbutton' color='secondary' target="about_blank" href={Res} class="btn pd-5 btn-default">View Resume</Button></div>
+      <Button  className="resumediv" id='lighterbutton' color='secondary' target="about_blank" href={Res} class="btn pd-5 btn-default">View Resume</Button></div>
 
 
     </div>

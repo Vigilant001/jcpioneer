@@ -59,7 +59,7 @@ const Contact = (props) => {
     break;
   }
 
-  return (<div>
+  return (<div className="contactdiv">
         <CardBody>
           <BoxText>Send an email at <a href="mailto:james@jcpioneer.com">HERE</a> and connect with James on these social media platforms:</BoxText>
              {buttons.map(btn=>(

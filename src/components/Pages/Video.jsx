@@ -110,7 +110,7 @@ const Video = (props) => {
        scope={scope}{...props}>
         <Button id="thumbbuttons" onClick={(x) => scope.toggle()}><CardImg top width="100%" src={imgSrc} alt="Card image cap" /></Button>
         <CardBody>
-        <CardTitle>{title}</CardTitle>
+        <CardTitle className="modaltitle">{title}</CardTitle>
         </CardBody>
       </Modals>
       </Card>

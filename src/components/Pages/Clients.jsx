@@ -7,7 +7,7 @@ import clientwall from 'img';
 
 const Clients = () => {
   return ([
-    <div>
+    <div className="clientdiv">
 
       <div>
         "This is OUTSTANDING!" : Sumo Logic </div> 
