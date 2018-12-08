@@ -16,11 +16,11 @@ class DataState {
         //route - added by setUpRouter (computed value)
         navOpen: false,
         workmode: 'Production',
-        workmodes: ['Production', '3D-Work'],
+        workmodes: [],
         pages: [{
             name: 'Home',
             hideNav: true,
-            title: 'PORTFOLIO'
+            title: 'INLAND EMPIRE PREMIERE VIDEO PRODUCTION'
         }, {
             name: 'Video',
             title: 'VIDEO WORK'

@@ -38,12 +38,10 @@ Playlist: https://www.youtube.com/playlist?list=PLPWKxB6Qd0X1BirihQPEr7HBUzA3ZlS
 
 const Video = (props) => {
   let {workmode} = props;
-  let popovers;
   let source1 = <video src="https://www.youtube.com/embed/vOLQyKn8BMY"/>
 
-  switch (workmode) {
-    case 'Production':
-      popovers = [
+
+  const popovers = [
         {
           placement: 'bottom',
           text: 'Event Capture',
@@ -66,18 +64,7 @@ const Video = (props) => {
           description: "James has over 12 years experience working in writing, directing, DP, and editing for commercials, corporate videos, documentaries, and event capture. James have also spent a year developing and training professional livestreaming platforms. James has experience in 3D character animation and 3D generalist work, trained by Pixar animators. This website was also developed fully custom by James, using React Javascript framework and reactstrap styling tools."
         },
       ];
-      break;
-    case '3D-Work':
-      popovers = [
-        {
-          placement: 'bottom',
-          text: '3D Work',
-          header: 'Design & Print',
-          description:'James has over 6 years experience in 3D modeling, 3D CAD design, Product Design, and 3D printing in FFF, Fiber Filled and SLA machines. He has 3D printed product prototypes, drone parts, client designs, and online print fulfilment shop. James owns 2 FFF based printers and one high end SLA (laser based) printer.'
-        },
-      ];
-      break;
-    }
+
 
   return (<div id="extraspace">
 
@@ -154,10 +141,9 @@ const Video = (props) => {
 
  
     {
-      popovers.map((popover, i) => { 
-        return <PopoverItem key={i} item={popover} id={`${props.name}-${props.workmode}-${i}`}
-      />;
-    })
+      popovers.map((popover, i) =>  
+        <PopoverItem key={i} item={popover} id={`${props.name}-${props.workmode}-${i}`}/>
+    )
   }
   
   </div>);

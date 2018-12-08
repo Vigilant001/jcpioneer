@@ -8,6 +8,13 @@
 	color: rgb(102,107,105);
 }
 
+#navMain {
+	min-height: 70px;
+}
+
+#navButtons {
+	min-height: 100px;
+}
 #navbarButtons {
 	color: rgb(102,107,105);
 }
