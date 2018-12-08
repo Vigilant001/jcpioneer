@@ -10,7 +10,7 @@ class App extends Component {
       <div style={{height: '50px'}}/>
       <Navigation/>
       <ContentArea />
-      <div style={{height: '80px'}}/>
+      
       </div>
     );
   }

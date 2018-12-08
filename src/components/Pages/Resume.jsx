@@ -10,13 +10,13 @@ import {Res} from 'img';
 
 const Resume = () => {
   return ([
-    <div>
+    // <div>
 
-      <div id='buttons2'> 
-      <Button  className="resumediv" id='lighterbutton' color='secondary' target="about_blank" href={Res} class="btn pd-5 btn-default">View Resume</Button></div>
+    //   <div id='buttons2'> 
+    //   <Button  className="resumediv" id='lighterbutton' color='secondary' target="about_blank" href={Res} class="btn pd-5 btn-default">View Resume</Button></div>
 
 
-    </div>
+    // </div>
   ]);
 };
 

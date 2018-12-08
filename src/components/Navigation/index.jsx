@@ -33,7 +33,7 @@ import {
         <Navbar color="light" id="navButtons" dark expand="lg">
           <NavbarBrand onClick={dataState.setPage.bind(dataState,'Home')} className='d-block'>
             <Row>
-            <strong id='homeButton' className='mt-1 d-none d-sm-block' style={{letterSpacing:'2px', padding: '25px', fontFamily:'./css/BebasKai.ttf'}}> JC PIONEER </strong>
+            <strong id='homeButton' className='mt-1' style={{letterSpacing:'2px', padding: '25px', fontFamily:'./css/BebasKai.ttf'}}> JC PIONEER </strong>
             </Row>
           </NavbarBrand>
           {data.workmodes.map(workmode => {

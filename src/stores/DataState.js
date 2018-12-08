@@ -26,13 +26,13 @@ class DataState {
             title: 'VIDEO WORK'
         }, {
             name: 'Resume',
-            title: false
+            title: 'CLIENTS',
         },{
             name: 'Clients',
-            title: 'CLIENTS'
+            title: 'CLIENT QUOTES'
         },{
             name: 'Contact',
-            title: 'CONTACT JAMES'
+            title: 'CONTACT JC PIONEER'
         }],
         page: null
     };
