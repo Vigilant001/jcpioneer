@@ -45,6 +45,9 @@
 	min-width: 1200px;
 	overflow: hidden;
 }
+#section_Clients img {
+	min-width: 1200px;
+}
 
 .clientdiv {
 	padding-bottom: 80px;
@@ -92,7 +95,7 @@ h5 {
 	letter-spacing: 2px;
 }
 #section_Clients {
-
+	max-height: 500px;
 	background-color: rgb(0,0,0,.0)
 }
 #section_Resume {

@@ -46,22 +46,22 @@ const Video = (props) => {
           placement: 'bottom',
           text: 'Event Capture',
           header: 'Every Occasion',
-          description:'For corporate events, weddings, or other special events, you have one chance to capture the moment right. James can work solo or with multiple cinematographers to get the best coverage and capture the heart of your event.'
+          description:'For corporate events, weddings, or other special events, you have one chance to capture the moment right. We can work single or with multiple cinematographers to get the best coverage and capture the heart of your event.'
         }, {
           placement: 'bottom',
           text: 'Promotional',
           header: 'Promote Your Brand',
-          description: "Making a short video to share on social media is critical to keep up now in your market. It's time to get more exposure on what your company does best. James can help you script your narrative, and best describe what you can do for your customers in an engaguing video."
+          description: "Making a short video to share on social media is critical to keep up now in your market. It's time to get more exposure on what your company does best. We can help you script your narrative, and best describe what you can do for your customers in an engaguing video."
         }, {
           placement: 'bottom',
           text: 'Documentary',
           header: 'Award Winning',
-          description: "From feature length to mini-documumentaries, James has thorough experience in writing, directing, and editing documentaries that capture true stories that resonates with the heart."
+          description: "From feature length to mini-documumentaries, We have thorough experience in writing, directing, and editing documentaries that capture true stories that resonates with the heart."
         },{
           placement: 'bottom',
           text: 'About James',
           header: 'Film Experience',
-          description: "James has over 12 years experience working in writing, directing, DP, and editing for commercials, corporate videos, documentaries, and event capture. James have also spent a year developing and training professional livestreaming platforms. James has experience in 3D character animation and 3D generalist work, trained by Pixar animators. This website was also developed fully custom by James, using React Javascript framework and reactstrap styling tools."
+          description: "James has over 12 years experience working in writing, directing, DP, and editing for commercials, corporate videos, documentaries, and event capture. He also spent years developing and training professional livestreaming platforms. He has experience in 3D character animation and 3D generalist work, trained by Pixar animators. Of late, James builds and flys FPV drones for dynamic video movement with limitless possibilities. This website was also developed fully custom by us, using React Javascript framework and reactstrap styling tools."
         },
       ];
 
