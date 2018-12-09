@@ -92,10 +92,10 @@ const Video = (props) => {
    },
   ].map(({scope, src, imgSrc, title,})=> (
       <Card id="modalcards">
-      <Modals className="modals1" 
+      <Modals className="modals1"
        modalBody={<iframe className="modalvideo" src={src} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>}
        scope={scope}{...props}>
-        <Button id="thumbbuttons" onClick={(x) => scope.toggle()}><CardImg top width="100%" src={imgSrc} alt="Card image cap" /></Button>
+        <Button className='thumbbuttons' onClick={(x) => scope.toggle()}><CardImg top width="100%" src={imgSrc} alt="Card image cap" /></Button>
         <CardBody>
         <CardTitle className="modaltitle">{title}</CardTitle>
         </CardBody>
@@ -128,7 +128,7 @@ const Video = (props) => {
       <Modals className="modals1"
        modalBody={<iframe className="modalvideo" src={src} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>}
        scope={scope}{...props}>
-        <Button id="thumbbuttons" onClick={(x) => scope.toggle()}><CardImg top width="100%" src={imgSrc} alt="Card image cap" /></Button>
+        <Button className="thumbbuttons" onClick={(x) => scope.toggle()}><CardImg top width="100%" src={imgSrc} alt="Card image cap" /></Button>
         <CardBody>
         <CardTitle>{title}</CardTitle>
         </CardBody>
@@ -139,16 +139,15 @@ const Video = (props) => {
     <Button color='secondary' target='about_blank' href="https://www.youtube.com/playlist?list=PLPWKxB6Qd0X1BirihQPEr7HBUzA3ZlSJG" class="btn pd-5 btn-default">Video Archive</Button>
     </div>
 
- 
+
     {
-      popovers.map((popover, i) =>  
+      popovers.map((popover, i) =>
         <PopoverItem key={i} item={popover} id={`${props.name}-${props.workmode}-${i}`}/>
     )
   }
-  
+
   </div>);
 
 };
 
 export default Video;
-

@@ -19,7 +19,7 @@ import {
   DropdownItem } from 'reactstrap';
 
   //import logo from 'img/acbranding2.png';
- 
+
 
 //this is written as a mobx class, so that mobx handles state changes.
   @inject('dataState')
@@ -45,10 +45,10 @@ import {
             )
           })}
           <NavbarToggler onClick={navToggle} />
-          
+
           <Collapse isOpen={data.navOpen} navbar>
             <Nav id="navbarButtons" className="ml-auto" navbar>
-            {data.pages.filter(x=> !x.hideNav).map(({name: pageName}) => 
+            {data.pages.filter(x=> !x.hideNav).map(({name: pageName}) =>
               <NavItem onClick={dataState.setPage.bind(dataState, pageName)}>
                 <NavLink className='nav-button'>{pageName.toUpperCase()}</NavLink>
               </NavItem>
