@@ -1,7 +1,8 @@
 // export {default as Home} from './balcony3.png';
- export {default as Home} from './jdcpioneer_back1.png';
- export {default as Resume} from './clientwall1.png';
+ export {default as Home} from './jcpioneerWeb2.png';
+ export {default as Clients} from './clientwall1.png';
  export {default as Res} from './jdcres2018b.pdf';
+ export {default as Contact} from './jcpioneerWeb2b.png';
  export {default as image1} from './image1.png';
  export {default as image2} from './image2.png';
  export {default as image3} from './image3.png';

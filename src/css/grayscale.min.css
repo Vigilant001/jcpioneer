@@ -5,7 +5,8 @@ body {
 	height: 100%;
 	color: rgb(180, 180, 180);
 	letter-spacing: 2px;
-	background-image: url(../img/jdcpioneer_back1.png)
+	background-image: none;
+	background-color: black;
 }
 
 html {

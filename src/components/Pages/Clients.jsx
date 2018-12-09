@@ -1,26 +1,24 @@
-//your Client page here
+//your Clientss page here
 
 import React from 'react';
 import { Button } from 'reactstrap';
 import clientwall from 'img';
+import {BoxText, PopoverItem} from 'components';
+
+import {Res} from 'img';
 
 
 const Clients = () => {
   return ([
-    <div className="clientdiv">
+    // <div>
 
-      <div>
-        "This is OUTSTANDING!" : Sumo Logic </div> 
-      <div> 
-        "...So professional and talented" : Culver-Newlin
-      </div>
-      <div>
-        "...exceeded my expectations!" : Real Estate Cafe
-      </div>
-    </div>
+    //   <div id='buttons2'> 
+    //   <Button  className="resumediv" id='lighterbutton' color='secondary' target="about_blank" href={Res} class="btn pd-5 btn-default">View Resume</Button></div>
+
+
+    // </div>
   ]);
 };
-
 
 export default Clients;
 

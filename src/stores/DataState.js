@@ -22,13 +22,13 @@ class DataState {
             hideNav: true,
             title: 'INLAND EMPIRE PREMIERE VIDEO PRODUCTION'
         }, {
-            name: 'Video',
-            title: 'VIDEO WORK'
+            name: 'Work',
+            title: ' '
         }, {
-            name: 'Resume',
-            title: 'CLIENTS',
-        },{
             name: 'Clients',
+            title: ' ',
+        },{
+            name: 'Quotes',
             title: 'CLIENT QUOTES'
         },{
             name: 'Contact',

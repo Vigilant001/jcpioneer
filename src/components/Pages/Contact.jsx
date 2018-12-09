@@ -10,6 +10,7 @@ import { BoxText } from 'components';
 const Contact = (props) => {
   let {workmode} = props;
   
+let year = (new Date()).getFullYear(); 
 
   const buttons = [{
         name: 'Facebook',
@@ -20,7 +21,7 @@ const Contact = (props) => {
       }]
       
 
-  return (<div className="contactdiv">
+  return (<div id="contactdiv">
         <CardBody>
           <BoxText>Send an email at <a href="mailto:james@jcpioneer.com">HERE</a> and connect with us on these social media platforms:</BoxText>
              {buttons.map(btn=>(
@@ -28,6 +29,7 @@ const Contact = (props) => {
                   <FontAwesomeIcon icon={['fab', btn.name.toLowerCase()]} />{' ' + btn.name}
                 </Button>
               ))}  
+              <div>© {year}, JC Pioneer, All Rights Reserved.</div>
         </CardBody>
 
   </div>);
