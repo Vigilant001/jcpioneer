@@ -45,9 +45,15 @@
 	min-width: 1200px;
 	overflow: hidden;
 }
+#section_Clients {
+	max-height: 500px;
+	background-color: rgb(0,0,0,.0);
+	overflow: hidden;
+}
 #section_Clients img {
 	min-width: 1200px;
 }
+
 
 .clientdiv {
 	padding-bottom: 80px;
@@ -77,7 +83,7 @@
 	/*This is the color that lingers for a sec after you leave a button*/
 	background-color: #DF0101 !important;
 	/*This is the color that makes up the background*/
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#DF0101), color-stop(40%, #E60808), to(#E60808))
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#DF0101), color-stop(40%, #E60808), to(#E60808)) !important;
 }
 .nav-item {
 	color: rgb(102,107,105) !important;
@@ -97,10 +103,7 @@ h5 {
 	font-family: 'BebasKai','Helvetica Neue', Helvetica, Arial, sans-serif;
 	letter-spacing: 2px;
 }
-#section_Clients {
-	max-height: 500px;
-	background-color: rgb(0,0,0,.0)
-}
+
 #section_Resume {
 
 	background-color: rgb(0,0,0,.0)
