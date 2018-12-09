@@ -33,12 +33,12 @@
 	max-height: 700px;
 	overflow: hidden;
 	background-color: rgba(0, 0, 0, 0)
-	
+
 }
 
 #section_Home .page_title {
 	padding-top: 200px;
-	
+
 }
 
 #section_Home img {
@@ -48,7 +48,7 @@
 
 .clientdiv {
 	padding-bottom: 80px;
-	
+
 }
 
 
@@ -56,24 +56,27 @@
 	min-height: 350px;
 	max-height: 600px;
 	background-color: rgb(0,0,0,.0)
-	
+
 }
 
 #section_Video {
-	
+
 	min-height: 300px;
 	background-color: rgb(0,0,0,.0)
-	
+
 }
 
-.nav-link { 
+.nav-link {
 	color:  rgb(102, 102, 102) !important;
 }
 
-.nav-link:hover {
-	color: rgb(136, 136, 136) !important;
+.nav-button.nav-link:hover {
+	/*This is the color that lingers for a sec after you leave a button*/
+	background-color: #DF0101 !important;
+	/*This is the color that makes up the background*/
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#DF0101), color-stop(40%, #E60808), to(#E60808))
 }
-.nav-item { 
+.nav-item {
 	color: rgb(102,107,105) !important;
 }
 
@@ -96,12 +99,12 @@ h5 {
 	background-color: rgb(0,0,0,.0)
 }
 #section_Resume {
-	
+
 	background-color: rgb(0,0,0,.0)
 }
 
 #extraspace {
-	padding-bottom: 40px;
+	padding-bottom: 10px;
 }
 
 #videospacing {
@@ -123,7 +126,7 @@ h5 {
 
 #section_Contact .card-img-overlay {
 	background-color: rgb(0,0,0,.7);
-	
+
 }
 
 #clientscard {
@@ -170,7 +173,7 @@ h5 {
 
 }
 
-.navbar { 
+.navbar {
 	border: none !important;
 	background-color: rgb(221,221,221,.8) !important;
 }
@@ -189,7 +192,7 @@ h5 {
 @font-face { font-family: Gotham Book; src: url('GothamBook.ttf'); }
 @font-face { font-family: Gotham Bold; src: url('GothamBold.ttf'); }
 @font-face { font-family: BebasKai; src: url('BebasKai.ttf'); }
-  
+
 #section_Home * .page_title{
 	font-family: 'BebasKai','Helvetica Neue', Helvetica, Arial, sans-serif;
 	text-transform: none;
@@ -227,15 +230,18 @@ h5 {
 	min-width: 1280px;
 	padding: 15px;
 	border: none !important;
-	
+
 }
 
-#thumbbuttons {
+.thumbbuttons {
 	border: 0px;
-	padding: none !important;
-	background-color: none !important; 
-	border: none !important;
+	padding: 0 !important;
+	background-color: none !important;
 	background-color: rgb(56, 85, 85);
+}
+
+.thumbbuttons.btn-secondary{
+	margin-bottom: 0;
 }
 
 .modals1 {
@@ -246,12 +252,16 @@ h5 {
 
 #modalcards {
 	background-color: rgb(38, 39, 38);
-	
+
+}
+
+#modalcards.card {
+	border: none !important;
 }
 .nav-button {
-	cursor: pointer; 
+	cursor: pointer;
 	border: none;
-	
+
 }
 .modalvideo {
 	position: absolute;
@@ -264,7 +274,7 @@ h5 {
 
 }
 .modaltitle {
-	
+
 }
 
 .lightbox {
@@ -295,10 +305,10 @@ h5 {
 
  img.go {
 	width: 450px;
-	max-width: 100%; 
-	max-height: 450px; 
+	max-width: 100%;
+	max-height: 450px;
   }
- 
+
 
 /*
 .dropdown-item{
