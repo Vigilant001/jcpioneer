@@ -1,7 +1,7 @@
 //your Clientss page here
 
 import React from 'react';
-import { Button } from 'reactstrap';
+import { Button, Col, Container, Row} from 'reactstrap';
 import clientwall from 'img';
 import {BoxText, PopoverItem} from 'components';
 
@@ -9,7 +9,14 @@ import {Res} from 'img';
 
 
 const Clients = () => {
-  return ([
+  return (
+  <Container id='clientSize'>
+    <Row>
+      <Col><div class='h1 .col'> Sumo Logic <br/> Culver-Newlin <br/> CMTC <br/> Norris Group <br/> Real Estate Cafe </div></Col>
+      <Col xs="6"><div class='h1 .col'> Make Magazine <br/> Greyback Granola <br/> Thrive SM <br/> TC United <br/> Active Churches </div></Col>
+    </Row>
+  </Container>
+
     // <div>
 
     //   <div id='buttons2'> 
@@ -17,7 +24,7 @@ const Clients = () => {
 
 
     // </div>
-  ]);
+  );
 };
 
 export default Clients;
