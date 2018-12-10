@@ -3,9 +3,10 @@
  export {default as Clients} from './jcpioneerWeb2.png';
  export {default as Res} from './jdcres2018b.pdf';
  export {default as Contact} from './jcpioneerWeb2b.png';
- export {default as image1} from './image1.png';
- export {default as image2} from './image2.png';
- export {default as image3} from './image3.png';
- export {default as image4} from './image4.png';
- export {default as image5} from './image5.png';
- export {default as image6} from './image6.png';
+ export {default as image1} from './reelThumb.png';
+ export {default as image2} from './sumoThumb.png';
+ export {default as image3} from './wimThumb.png';
+ export {default as image4} from './justinThumb.png';
+ export {default as image5} from './karinaThumb.png';
+ export {default as image6} from './greybackThumb.png';
+ export {default as ytButton} from './ytPlay.png';

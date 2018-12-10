@@ -4,7 +4,7 @@ import {BoxText, PopoverItem, Modals} from 'components';
 import { Modal, ModalHeader, ModalBody, ModalFooter, Card, CardText, CardImg, CardTitle, CardGroup, CardBody, CardSubtitle, Button, Container, Row, Col  } from 'reactstrap';
 import { Document } from 'react-pdf'
 import {Res} from 'img';
-import {image1, image2, image3, image4, image5, image6} from 'img';
+import {image1, image2, image3, image4, image5, image6, ytButton} from 'img';
 
 /*
 const YouTube1 = (props) => {
@@ -56,7 +56,7 @@ const Video = (props) => {
           placement: 'bottom',
           text: 'Documentary',
           header: 'Award Winning',
-          description: "From feature length to mini-documumentaries, We have thorough experience in writing, directing, and editing documentaries that capture true stories that resonates with the heart."
+          description: "From feature length to mini-documumentaries, we have thorough experience in writing, directing, and editing documentaries that capture true stories that resonates with the heart."
         },{
           placement: 'bottom',
           text: 'About James',
@@ -92,10 +92,14 @@ const Video = (props) => {
    },
   ].map(({scope, src, imgSrc, title,})=> (
       <Card id="modalcards">
-      <Modals className="modals1"
+      <Modals className="modals1" 
        modalBody={<iframe className="modalvideo" src={src} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>}
        scope={scope}{...props}>
-        <Button className='thumbbuttons' onClick={(x) => scope.toggle()}><CardImg top width="100%" src={imgSrc} alt="Card image cap" /></Button>
+        <Button className="thumbbuttons" onClick={(x) => scope.toggle()}><CardImg top width="100%" src={imgSrc} alt="Card image cap"/>
+          <div className='ytButton'>
+            <img src={ytButton}/> 
+          </div>
+        </Button>
         <CardBody>
         <CardTitle className="modaltitle">{title}</CardTitle>
         </CardBody>
@@ -129,6 +133,9 @@ const Video = (props) => {
        modalBody={<iframe className="modalvideo" src={src} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>}
        scope={scope}{...props}>
         <Button className="thumbbuttons" onClick={(x) => scope.toggle()}><CardImg top width="100%" src={imgSrc} alt="Card image cap" /></Button>
+        <div className='ytButton'>
+            <img src={ytButton}/> 
+          </div>
         <CardBody>
         <CardTitle>{title}</CardTitle>
         </CardBody>
@@ -139,15 +146,16 @@ const Video = (props) => {
     <Button color='secondary' target='about_blank' href="https://www.youtube.com/playlist?list=PLPWKxB6Qd0X1BirihQPEr7HBUzA3ZlSJG" class="btn pd-5 btn-default">Video Archive</Button>
     </div>
 
-
+ 
     {
-      popovers.map((popover, i) =>
+      popovers.map((popover, i) =>  
         <PopoverItem key={i} item={popover} id={`${props.name}-${props.workmode}-${i}`}/>
     )
   }
-
+  
   </div>);
 
 };
 
 export default Video;
+
